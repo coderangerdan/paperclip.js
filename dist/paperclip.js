@@ -2120,7 +2120,7 @@ module.exports = (function() {
 
               for (var i = 0, n = attributes.length; i < n; i++) {
                 var attr = attributes[i];
-                attrs[attr.name] = attr.value;
+                attrs[attr.name] = attr.value || true;
               }
 
               return new HashExpression(attrs);
