@@ -780,7 +780,7 @@ BaseAttribute.extend(ValueAttribute, {
   },
 
   _parseValue: function(value) {
-    if (value == null || value === "") return void 0;
+    if (value == null) return void 0;
     return value;
   },
 
