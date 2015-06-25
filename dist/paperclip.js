@@ -738,7 +738,7 @@ BaseAttribute.extend(ValueAttribute, {
     var self = this;
 
     // TODO - move this to another attribute helper (more optimal)
-    if (/^(text|password|email)$/.test(this.node.getAttribute("type"))) {
+    if (/^(text|password|email|url|date)$/.test(this.node.getAttribute("type"))) {
       this._autocompleteCheckInterval = setInterval(function() {
         self._onInput();
       }, process.browser ? 500 : 10);
